@@ -5,7 +5,7 @@ import requests
 import json
 
 class BittrexConnection:
-    def __init__(self, apiKey, apiSecret, apiBaseURL) -> None:
+    def __init__(self, apiKey, apiSecret, apiBaseURL='https://api.bittrex.com/v3') -> None:
         self.apiKey = apiKey
         self.apiSecret = apiSecret
         self.apiBaseURL = apiBaseURL
